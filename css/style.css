@@ -171,9 +171,9 @@ a:hover:after {
 
 .profile-pic {
   width: 300px;
-  filter: grayscale(0.6);
-  -webkit-filter: grayscale(0.5);
-  border: 5px solid var(--yellow);
+  /* filter: grayscale(0.6);
+  -webkit-filter: grayscale(0.5); */
+  /* border: 5px solid var(--yellow); */
   -webkit-transition: border 0.5s;
   transition: border 0.5s ease-out;
 }
@@ -197,4 +197,30 @@ a:hover:after {
 
 .yellow {
   color: var(--yellow);
+}
+
+ul{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 200px));
+  color: var(--slate);
+  transition: color 0.5s ease-in-out;
+}
+
+.li-element:hover{
+  color: var(--yellow);
+  transition: color 0.5s ease-in-out;
+}
+
+.li-element::before {
+  content: '>';
+  color: var(--yellow);
+  margin-right: 0.5em;
+}
+
+.font-bold {
+  font-family: var(--font-open);
+}
+
+.contact {
 }
