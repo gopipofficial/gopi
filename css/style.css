@@ -63,6 +63,10 @@
   --lightest-navy: #233554;
 }
 
+::selection {
+  color: var(--yellow);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -72,10 +76,18 @@ body {
   height: 100vh;
   min-width: 100%;
   overflow-x: hidden;
-  /* background-color: var(--dark-blue); */
   background-color: var(--dark-navy);
   color: #fff;
   line-height: 1.3;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--yellow);
+  outline: 1px solid var(--light-slate);
 }
 
 .nav-color {
@@ -87,6 +99,7 @@ body {
   font-family: var(--font-open);
   color: var(--light-slate);
   margin-top: 30px;
+  font-size: 100px;
 }
 
 .name-desc {
@@ -199,7 +212,25 @@ a:hover:after {
   color: var(--yellow);
 }
 
-ul{
+.dark-slate {
+  color: var(--dark-slate);
+}
+
+.clients {
+  color: var(--light-slate);
+  transition: color 0.3s ease-in;
+}
+
+.clients:hover {
+  color: var(--yellow);
+  transition: color 0.3s ease-out;
+}
+
+.light-slate {
+  color: var(--light-slate);
+}
+
+ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, minmax(140px, 200px));
@@ -207,13 +238,13 @@ ul{
   transition: color 0.5s ease-in-out;
 }
 
-.li-element:hover{
+.li-element:hover {
   color: var(--yellow);
   transition: color 0.5s ease-in-out;
 }
 
 .li-element::before {
-  content: '>';
+  content: ">";
   color: var(--yellow);
   margin-right: 0.5em;
 }
@@ -222,5 +253,50 @@ ul{
   font-family: var(--font-open);
 }
 
-.contact {
+.contact-shadow {
+  opacity: 0.1;
+  font-size: 69px;
+  font-weight: 700;
+  color: var(--light-slate);
+}
+
+.contact-content {
+  font-size: 60px;
+  padding: 3em 0;
+  height: 100vh;
+}
+
+.footer-content {
+  bottom: 0;
+}
+
+.top {
+  float: right;
+  border: 1px solid var(--light-slate);
+  padding: 1em;
+  cursor: pointer;
+}
+
+.top:hover {
+  color: var(--yellow);
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  border: 1px solid var(--dark-slate);
+}
+
+.margin-top {
+  margin-top: 8em !important;
+}
+
+.margin-top-bottom-8em {
+  margin: 8em 0 !important;
+}
+
+.youtube-video-icon {
+  width: 100%;
+  height: auto;
+}
+
+.height-100vh {
+  height: 100vh;
 }
