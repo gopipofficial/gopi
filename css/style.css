@@ -102,6 +102,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 100px;
 }
 
+#header-section{
+  background-image: url("../icons/bg.png");
+}
+
 .name-desc {
   /* font-family: var(--font-italics); */
   font-family: var(--font-open);
