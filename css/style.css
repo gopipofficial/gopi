@@ -74,7 +74,6 @@
 }
 
 body {
-  height: 100vh;
   min-width: 100%;
   overflow-x: hidden;
   background-color: var(--dark-navy);
